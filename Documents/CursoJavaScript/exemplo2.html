@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Verificador de Imagem</title>
+        <link rel="stylesheet" href="estilo.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>Verficador de Imagem</h1>
+
+        </header>
+        <section>
+
+        <div>
+        <p> Ano de nascimento</p>
+        <input  type="number" name="textano" id="textano" min="0">
+        <p>Sexo:
+        <input type="radio" name="radiosexo" id="masc" checked>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="radiosexo" id="fem">
+        <label  for="fem">Feminino</label>
+        </p>
+            <input type="button"value="verificar" onclick="verificar()">
+        
+        </div>
+        <div id="res">
+        Preencha os dados acima para ver o resultado!
+        </div>
+        
+
+        </section>
+        <footer>
+            <p>&copyVerficador de imagem</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+   
+    </html>

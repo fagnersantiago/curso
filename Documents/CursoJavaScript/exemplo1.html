@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" name="nome" id="Nome">
+        <button type="button" value="votar" id ="votar"onclick="Votar()">Votar</button>
+
+    
+    <script>
+    
+        function Votar(){
+
+            var votacao = document.getElementById('Nome')
+            var resultado = document.getElementById('votar')
+            var voto = Number(votacao.value)
+            var res = resultado
+            
+          
+                switch (voto){
+                case  voto = 13:
+                    res.innerHTML = `Você votou no Lula ${voto} e você é petista`
+                    break;
+
+                case voto =17:
+                    res.innerHTML = `Você votou no Bolsonaro ${voto} e  você é patriota`
+                    break;
+                }
+                
+               /*
+                if(voto == 13){
+                    resultado.innerHTML = `Você votou no Lula ${voto} e você é petista`
+                } else if( voto == 17){
+
+                    resultado.innerHTML = `Você votou no Bolsonaro ${voto} e você é patriota`
+                }
+                */
+        }
+
+    </script>
+
+    </body>
+    </html>
